@@ -1,0 +1,362 @@
+/* Focus : First Mobile */
+
+/* @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Variables */
+:root{
+    --font-color-main: #575757;
+    --font-color-second: #83c8a7;
+    --font-color-dark: #2c2b2b;
+    --bg-color-main: white;
+    --bg-color-second: #83c8a7;
+}
+
+*,
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts */
+body{
+    font-family: 'Noto Sans JP', serif;
+    font-weight: 400;
+}
+
+
+/* Layout */
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.guide-container {
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+}
+
+/* ===== HEADER ===== */
+
+.header {
+    width: 100%;
+    height: 60px;
+}
+
+.header .container-content {
+   position: relative;  
+}
+
+.header .container-phone-link { 
+    display: none; 
+}
+
+.header-wrapper-content {
+    height: 60px;
+    /* overflow: hidden; */
+}
+
+.header .row-1 {
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 10px;
+}
+
+.header .logo-main {
+    width: 100%;
+    max-width: 190px;
+}
+
+/* toggle button */
+.header .btn-toggle {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.header .btn-toggle .line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: var(--bg-color-second);
+}
+
+.header .btn-toggle .line::before,
+.header .btn-toggle .line::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: inherit;
+    transition: inherit;
+    position: absolute;
+    background-color: var(--bg-color-second);
+}
+
+.header .btn-toggle .line::before {
+    top: -10px;
+}
+
+.header .btn-toggle .line::after {
+    bottom: -10px;
+}
+
+/* toggle open button */
+.header .btn-toggle-open .line {
+    background-color: transparent;
+    transition: all 500ms ease-in-out;
+}
+
+.header .btn-toggle-open .line::before{
+     top: 0;
+     transform: rotate(-30deg);
+}
+.header .btn-toggle-open .line::after {
+    bottom: 0;
+    transform: rotate(30deg);
+}
+
+/* nav */
+.header .nav-bar {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    top: 60px;
+    background-color: white;
+}
+
+header .nav-bar-close {
+    height: 0 !important;
+    overflow: hidden;
+}
+
+.header .nav-bar ul.container-link {
+    padding: 15px;
+    padding-top: 35px;
+}
+
+.header .nav-bar ul.container-link li {
+    border-bottom: 2px dotted var(--bg-color-second);
+}
+
+.header .nav-bar ul.container-link li:last-child {
+    border-bottom: none;
+}
+
+.header .nav-bar .container-link .link {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--font-color-second)
+}
+
+.header .nav-bar .container-link .link .icon {
+    width: 8px;
+}
+
+.header .nav-bar .container-link .link-phone {
+    font-size: 30px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.header .nav-bar .container-link .link-phone span i {
+    font-size: 14px;
+    font-style: normal;
+}
+.header .nav-bar .container-link .link-phone .schedule {
+    font-size: 10px;
+}
+
+/* -- Header TB -- */
+
+@media screen and (min-width: 768px) {
+
+    .header {
+        height: 72px;
+    }
+
+    .header-wrapper-content {
+        height: 72px;
+    }
+
+    .header .row-1 {
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+     }
+
+    .header .logo-main {
+        width: 100%;
+        max-width: 210px;
+    }
+      
+    /* -- Nav Bar */
+    .header .nav-bar {
+        top: 72px;
+        height: calc( 100vh - 72px );
+    }
+
+}
+
+@media screen and (min-width: 1110px) {
+
+    .header {
+        height: 132px;
+    }
+
+    .header-wrapper-content {
+        height: auto;
+    }
+
+    .header .row-1 {
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 20px;
+     }
+
+    .header .logo-main {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .header .btn-toggle {
+        display: none;
+    }
+
+    .header .container-phone-link {
+        display: unset;
+    }
+    .header .container-phone-link .link-phone{
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 22px;
+        font-weight: 400;
+        color: var(--font-color-main);
+        letter-spacing: 1.5px;
+    }
+
+    .header .container-phone-link .link-phone i {
+        font-style: normal;
+        font-size: 10px;
+    }
+
+    .header .container-phone-link .link-phone .schedule {
+        font-size: 10px;
+    }
+      
+    /* -- Nav Bar */
+    .header .nav-bar {
+        position: unset;
+        top: unset;
+        height: auto;
+    }
+
+    header .nav-bar-close {
+        height: auto !important;
+        overflow: auto;
+    }
+
+    .header .nav-bar ul.container-link { 
+       padding: 0;
+       display: flex;
+       justify-content: center;
+    }
+
+    .header .nav-bar ul.container-link li {
+        border: none;
+    }
+
+    .header .nav-bar .container-link .link {
+        position: relative;
+        display: inline-block;
+        padding: 5px 7px;
+        color: var(--font-color-main);
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+
+    .header .nav-bar .container-link .link::before{
+        position: absolute;
+        left: 50%;
+        bottom: 1px;
+        transform: translateX(-50%) scale(0);
+        content: "";
+        display: block;
+        width: 90%;
+        height: 1px;
+        background-color: var(--font-color-main);
+        transition: transform 500ms ease-in-out;
+   }
+
+    .header .nav-bar .container-link .link::after{
+         position: absolute;
+         top: 50%;
+         right: 0;
+         transform: translateY(-50%);
+         content: "";
+         display: block;
+         width: 1px;
+         height: 42%;
+         background-color: var(--font-color-main);
+    }
+
+    .header .nav-bar .container-link .link:nth-last-child(-n-2)::after{
+        display: none;
+    }
+
+
+    .header .nav-bar .container-link .link:hover::before{
+        transform: translateX(-50%) scale(1);
+    }
+
+    .header .nav-bar .container-link .link .icon {
+        display: none;
+    }
+
+    .header .nav-bar .container-link .link-phone{
+        display: none;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
