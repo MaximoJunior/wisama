@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/se.css" type="text/css">
     <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="stylesheet" href="styles/index.css" type="text/css">
    
     <title>Wisama</title>
 </head>
@@ -23,7 +24,7 @@
                   </div>
                   <div class="col container-phone-link">
                       <a href="tel:052-123-4567" class="link-phone container-flex">
-                         <span><i>tel</i>052-123-4567</span>
+                         <span><i>tel.</i>052-123-4567</span>
                          <span class="schedule">電話受付：平日 9:00～18:30</span>
                          <span class="schedule">土曜 9:00～12:00</span>
                       </a>
@@ -36,7 +37,7 @@
                <nav id="main-nav-bar" class="nav-bar nav-bar-close">
                   <ul class="container-link">
                     <li>
-                        <a href="#" class="link container-flex">
+                        <a href="#" class="link link-active container-flex">
                             <span class="text">ホーム</span>
                             <span class="icon">
                                 <img src="images/icon-arrow.svg" alt="Icon arrow">
@@ -109,111 +110,122 @@
     <section class="kv">
         <div class="wrapper-kv">
 
-            <div class="kv-container-content">
+            <div class="container-content guide-container">
                  <div>
-                     <h1>
-                         <span>あなたと共にあゆみ</span>
-                         <span>こころに寄り添うクリニック</span>
+                     <h1 class="kv-title container-flex">
+                         <span class="item-1">あなたと共にあゆみ</span>
+                         <span class="item-2">こころに寄り添うクリニック</span>
                      </h1>
-                     <div>
+                     <div class="container-slogan">
                          <img class="kv-slogan" src="images/top-slogan.svg" alt="Slogan">
                      </div>
                  </div>
             </div>
             <div class="kv-slider">
-                <div class="kv-slider-item kv-slider-item-show" data-slide-ext=".png" data-img="kv_img_slide0"></div>
-                <div class="kv-slider-item" data-slide-ext=".png"  data-img="kv_img_slide0"></div>
+                <!-- <div class="kv-slider-item kv-slider-item-show" data-slide-ext=".png" data-img="kv_img_slide0"></div>
+                <div class="kv-slider-item" data-slide-ext=".png"  data-img="kv_img_slide0"></div> -->
+                <img src="images/slider_picture_1.png" alt="Pictures Slider one" style="object-fit: cover; height:100%; width: 100%;">
+                <img src="images/slider_picture_1.png" alt="Pictures Slider one" style="object-fit: cover; height:100%; width: 100%;">
             </div>
 
         </div>
 
-        <div class="kv-container-table container-content">
-           <div class="row">
-               <table>
-                   <tr>
-                       <th>診療時間</th>
-                       <th>月</th>
-                       <th>火</th>
-                       <th>水</th>
-                       <th>木</th>
-                       <th>金</th>
-                       <th>土</th>
-                       <th>日</th>
-                   </tr>
-                   <tr>
-                       <td>9:00-12:30</td>
-                       <td>O</td>
-                       <td>O</td>
-                       <td>O</td>
-                       <td>-</td>
-                       <td>O</td>
-                       <td>O</td>
-                       <td>-</td>
-                   </tr>
-                   <tr>
-                    <td>15:00-18:30</td>
-                    <td>O</td>
-                    <td>O</td>
-                    <td>O</td>
-                    <td>-</td>
-                    <td>O</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-               </table>
-               <div class="row">
-                   <p>〒485-0003</p>
-                   <p>愛知県小牧市小松寺５丁目２</p>
+        <div class="kv-container-table guide-container">
+          <div class="wrapper-content">
+           <div class="row row-1">
+               <div class="col col-1">
+                   <table >
+                       <thead>
+                           <tr>
+                               <th>診療時間</th>
+                               <th>月</th>
+                               <th>火</th>
+                               <th>水</th>
+                               <th>木</th>
+                               <th>金</th>
+                               <th>土</th>
+                               <th>日</th>
+                           </tr>
+                       </thead>
+                       <tr>
+                           <td>9:00-12:30</td>
+                           <td><span></span></td>
+                           <td><span></span></td>
+                           <td><span></span></td>
+                           <td><span class="dash"></span></td>
+                           <td><span></span></td>
+                           <td><span></span></td>
+                           <td><span></span></td>
+                       </tr>
+                       <tr>
+                        <td>15:00-18:30</td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                    </tr>
+                   </table>
+                   <p class="tablet-bottom-caption">（受付終了30分前）</p>
+               </div>
+               <div class="col col-2">
+                   <p class="special">〒485-0003<br>愛知県小牧市小松寺５丁目２</p>
                    <p>※左記診療時間内であっても予約がお受けできない場合が
                     ございます。診察時間につきましてはお電話にてご確認
                     ください。</p>
                </div>
            </div>
-           <div class="row">
-               <div>
-                  <a href="">
-                     <span>
+           <div class="row row-2">
+               <div class="col col-1">
+                  <a href="tel:052-123-4567" class="phone-link container-flex">
+                     <span class="schedule schedule-pc">
                          <i>電話受付：平日 9:00～18:30</i>
                          <i>土曜 9:00～12:00</i>
                      </span>
-                     <span>
-                        <i>tel</i>
-                        <i>052-123-4567</i>
+                     <span class="phone-tag">
+                        <i>tel.</i>
+                        <i class="number">052-123-4567</i>
+                    </span>
+                    <span class="schedule schedule-sp">
+                        <i>電話受付：平日 9:00～18:30</i>
+                        <i>土曜 9:00～12:00</i>
                     </span>
                   </a>
                </div>
 
-               <div>
-                  <a href="#">
-                     <span>初診の方はこちら</span>
-                     <span><i>icon</i></span>
+               <div class="col col-2">
+                  <a href="#" class="link-button link-first-visit">
+                     <span class="tag">初診の方はこちら</span>
+                     <span class="icon"><img src="images/icon_link_button.svg" alt="Icon arrow"></span>
                   </a>
                </div>
 
            </div>
+          </div> 
         </div>
 
     </section><!--/kv-->
 
-    <section class="info-section">
+    <section class="info-section section-padding">
 
-        <div class="container-content container-content">
-
-            <div>
-                <div>
-                    <span>心</span>
-                    <span>療</span>
-                    <span>内</span>
-                    <span>科</span>
-                </div>
-                <h2>開業のお知らせ</h2>
+        <div class="container-content guide-container">
+            <div class="row row-1 container-flex">
+                <h2 class="container-flex">
+                    <span class="circle circle-1"><i>心</i></span>
+                    <span class="circle"><i>療</i></span>
+                    <span class="circle"><i>内</i></span>
+                    <span class="circle"><i>科</i></span>
+                    <span>開業のお知らせ</span>
+                </h2>
             </div>
 
-            <div>
-                <div>
-                    <span>2022.4.1</span>
+            <div class="row row-2 container-flex">
+                <div class="col col-1">
+                    <span class="date text-vertical">2022.4.1</span>
                 </div>
-                <div>
+                <div class="col col-2">
                     <p>2022年４月１日に小牧市にて、みさわこころのクリニックを開業いたします。</p>
                     <p>心療内科医としてこれまでの経験を活かし、</p>
                     <p>皆さまのこころに寄り添うクリニックを目指して参ります。</p>
@@ -221,53 +233,68 @@
             </div>
 
         </div>
+        
 
     </section><!--/info-section-->
 
-    <section class="news-section">
+    <section class="news-section section-padding">
 
-        <div class="section-container-title">
-              <span>
-                  <img class="corona-title" src="images/coronatitle-green.png" alt="Corona title"/>
+        <div class="section-container-title container-flex">
+              <span class="corona container-flex">
+                  <img class="corona-img" src="images/coronatitle-green.png" alt="Corona title"/>
                   <i class="english-title">NEWS</i>
               </span>
               <h2 class="title">お知らせ</h2>
         </div>
 
-        <div class="section-container-description container-content">
+        <div class="container-content">
 
-            <article>
-                <div class="article-img">
-                    <img src="images/news_article1.png" alt="News article"/>
-                </div>
-                <h3 class="article-title">お知らせその３</h3>
-                <p>みさわこころのクリニックからの
-                    お知らせのサンプルテキスト文面
-                    入力サンプル</p>
-                <span class="arrow"></span>
-            </article>
-
-            <article>
-                <div class="article-img">
-                    <img src="images/news_article2.png" alt="News article"/>
-                </div>
-                <h3 class="article-title">お知らせその2</h3>
-                <p>みさわこころのクリニックからの
-                    お知らせのサンプルテキスト文面
-                    入力サンプル</p>
-                <span class="arrow"></span>
-            </article>
-
-            <article>
-                <div class="article-img">
-                    <img src="images/news_article3.png" alt="News article"/>
-                </div>
-                <h3 class="article-title">お知らせその1</h3>
-                <p>みさわこころのクリニックからの
-                    お知らせのサンプルテキスト文面
-                    入力サンプル</p>
-                <span class="arrow"></span>
-            </article>
+            <div class="container-article container-flex">
+                    <article>
+                        <a href="#">
+                            <div class="container">
+                                <div class="article-img">
+                                    <img src="images/news_article1.png" alt="News article"/>
+                                </div>
+                                <h3 class="article-title">お知らせその３</h3>
+                                <p>みさわこころのクリニックからの
+                                    お知らせのサンプルテキスト文面
+                                    入力サンプル</p>
+                            </div>
+                            <span class="arrow"><img src="images/news_corner_icon.svg" alt="News Icon"></span>
+                        </a>  
+                    </article>
+    
+                    <article>
+                        <a href="#">
+                            <div class="container">
+                                <div class="article-img">
+                                    <img src="images/news_article2.png" alt="News article"/>
+                                </div>
+                                <h3 class="article-title">お知らせその2</h3>
+                                <p>みさわこころのクリニックからの
+                                    お知らせのサンプルテキスト文面
+                                    入力サンプル</p>
+                            </div>
+                            <span class="arrow"><img src="images/news_corner_icon.svg" alt="News Icon"></span>
+                        </a>  
+                    </article>
+    
+                    <article>
+                        <a href="#">
+                            <div class="container">
+                                <div class="article-img">
+                                    <img src="images/news_article3.png" alt="News article"/>
+                                </div>
+                                <h3 class="article-title">お知らせその３</h3>
+                                <p>みさわこころのクリニックからの
+                                    お知らせのサンプルテキスト文面
+                                    入力サンプル</p>
+                            </div>
+                            <span class="arrow"><img src="images/news_corner_icon.svg" alt="News Icon"></span>
+                        </a>  
+                    </article>
+            </div>
 
 
         </div>
@@ -275,33 +302,36 @@
     </section><!--/news-section-->
 
 
-    <section class="beginner-guide-section section">
+    <section class="beginner-guide-section section-padding">
 
         <div class="section-container-title">
-              <span>
-                  <img class="corona-title" src="images/coronatitle-green.png" alt="Corona title"/>
+              <span class="corona container-flex">
+                  <img class="corona-img" src="images/coronatitle-green.png" alt="Corona title"/>
                   <i class="english-title">Beginner's Guide</i>
               </span>
               <h2 class="title">はじめての方へ</h2>
         </div>
 
-        <div class="section-container-description container-content">
+        <div class="container-content">
              
-            <div>
-                <div>
+            <div class="row row-1 container-flex">
+                <div class="col col-1">
                     <img src="images/beginner_guide_nurse.png" alt="Nurse"/>
                 </div>
-                <div>
-                    <div>
-                        <p>こんなことで相談していいのかな？</p>
-                        <p>まだ病院で診てもらうほどではないんじゃないか？</p>
+                <div class="col col-2">
+                    <div class="card">
+                        <div class="top">
+                            <p class="title"><span class="square"></span>こんなことで相談していいのかな？</p>
+                            <p class="title"><span class="square"></span>まだ病院で診てもらうほどではないんじゃないか？</p>
+                        </div>
                         <p>ひとりで迷わずに、つらいことや気になる事など
                             どんな小さなことでもお話しいただくことが不安解消の第一歩となります。</p>
                         <p>まずはご相談だけでもお気軽にご来院ください。</p>
-                        <a href="#">
-                            <span></span>
+                        <a class="link-button" href="#">
+                            <span class="tag">初診の方はこちら</span>
+                            <span class="icon"><img src="images/icon_link_button_white.svg" alt="Icon arrow"></span>
                         </a>
-                        <img src="images/doctor.svg" alt="Dear Doctor"/>
+                        <img class="card-img" src="images/doctor.svg" alt="Dear Doctor"/>
                     </div>
                 </div>
             </div>
@@ -310,28 +340,32 @@
 
     </section><!--/beginner-guide-section-->
 
-    <section class="feature-section section">
+    <section class="feature-section section-padding">
 
         <div class="section-container-title">
-              <span>
-                  <img class="corona-title" src="images/coronatitle-white.svg" alt="Corona title"/>
-                  <i class="english-title">feature</i>
-              </span>
-              <h2 class="title">クリニックの特徴</h2>
-        </div>
+            <span class="corona container-flex">
+                <img class="corona-img" src="images/coronatitle-white.svg" alt="Corona title"/>
+                <i class="english-title">Feature</i>
+            </span>
+            <h2 class="title">クリニックの特徴</h2>
+      </div>
 
-        <div class="section-container-description container-content">
+        <div class="container-content">
              
-            <div>
-                 <h3>地域に根ざしたこころのクリニック</h3>
+            <div class="row description-content">
+                 <h3 class="title">
+                     地域に根ざした<br class="breakline">こころのクリニック
+                 </h3>
 
                  <p>私たちみさわこころのクリニックは地域に根ざしたこころのクリニックとして、様々なこころの病や漫然とした不安、体の不調などの治療を行っています。</p>
                  <p>日常の生活に不安や負荷を抱えやすい時代だからこそ、皆さまにとって、気軽で身近な相談相手でありたいと思っています。</p>
 
-                 <img src="images/komaki-map.svg" alt="Komaki Map" />
-                 <a>
-                     <span>詳しくはこちら</span>
-                 </a>
+                 <img class="img-map" src="images/komaki-map.svg" alt="Komaki Map" />
+
+                 <a class="link-button" href="#">
+                    <span class="tag">初診の方はこちら</span>
+                    <span class="icon"><img src="images/icon_link_button.svg" alt="Icon arrow"></span>
+                </a>
 
             </div>
            
@@ -340,69 +374,63 @@
     </section><!--/feature-section-->
 
 
-    <section class="consultation-section section">
+    <section class="consultation-section section-padding">
 
-        <div class="section-container-title">
-              <span>
-                  <img class="corona-title" src="images/coronatitle-green.png" alt="Corona title"/>
+        <div class="section-container-title container-flex">
+              <span class="corona container-flex">
+                  <img class="corona-img" src="images/coronatitle-green.png" alt="Corona title"/>
                   <i class="english-title">consultation</i>
               </span>
               <h2 class="title">こんな症状でお悩みの方は<br>一度ご相談ください</h2>
         </div>
 
-        <div class="section-container-description container-content">
+        <div class="container-content">
              
-            <div>
+            <div class="container-article container-flex">
                 <article>
-                    <div class="symtoms">
+                    <div class="symtoms container-flex">
                         <span class="tag">SYMTOMS</span>
                         <span class="number">01</span>
                     </div>
-                    <div class="article-img">
-                        <img src="images/consultation_symptoms1.png" alt="News article"/>
-                    </div>
+                    <img class="article-img" src="images/consultation_symptoms1.png" alt="News article"/>
                     <p>なんとなく気分が落ち込む、
                         元気がでない。</p>
                 </article>
     
                 <article>
-                    <div class="symtoms">
+                    <div class="symtoms container-flex">
                         <span class="tag">SYMTOMS</span>
                         <span class="number">02</span>
                     </div>
-                    <div class="article-img">
-                        <img src="images/consultation_symptoms2.png" alt="News article"/>
-                    </div>
+                        <img class="article-img" src="images/consultation_symptoms2.png" alt="News article"/>
                     <p>いつも不安感がある。
                         動悸がする。</p>
                 </article>
     
                 <article>
-                    <div class="symtoms">
+                    <div class="symtoms container-flex">
                         <span class="tag">SYMTOMS</span>
                         <span class="number">03</span>
                     </div>
-                    <div class="article-img">
-                        <img src="images/consultation_symptoms3.png" alt="News article"/>
-                    </div>
-                    <p>気をつけていても物忘れや、ミスばかりしてしまう。</p>
+                       <img class="article-img" src="images/consultation_symptoms3.png" alt="News article"/>
+                       <p>気をつけていても物忘れや、ミスばかりしてしまう。</p>
                 </article>
 
                 <article>
-                    <div class="symtoms">
+                    <div class="symtoms container-flex">
                         <span class="tag">SYMTOMS</span>
                         <span class="number">04</span>
                     </div>
-                    <div class="article-img">
-                        <img src="images/consultation_symptoms4.png" alt="News article"/>
-                    </div>
+                 
+                        <img class="article-img" src="images/consultation_symptoms4.png" alt="News article"/>
+                    
                     <p>夜、ゆっくり眠れない。
                         朝に起きられない。</p>
                 </article>
 
             </div>
 
-            <h3>適切な治療によりこれらの症状は改善できるかもしれません</h3>
+            <h2>適切な治療によりこれらの症状は改善できるかもしれません</h2>
 
             <div class="container-info">
 
