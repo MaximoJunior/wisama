@@ -1114,7 +1114,7 @@ article  .symtoms {
     top: -25px;
     transform: translateX(-50%);
     flex-direction: column;
-    padding: 4px;
+    padding: 8px;
     background-color: white;
     color: var(--font-color-main);
     overflow: hidden;
@@ -1145,10 +1145,11 @@ article  .symtoms .number {
 .consultation-section .container-article 
 article  .symtoms .number::before {
     position: absolute;
-    left: 25px;
+    left: 22px;
+    bottom: 11px;
     content: "";
     display: block;
-    width: 45px;
+    width: 38px;
     height: 1px;
     transform: rotate(-45deg);
     background-color: var(--font-color-main);
@@ -1163,11 +1164,226 @@ article  .symtoms .number::before {
 }
 
 .consultation-section .container-article article .article-img {
-    object-fit: cover;
+    display: block;
+    width: auto;
     height: 100px;
+    margin: 0 auto;
+}
+
+.consultation-section .container-sub-title{
+    text-align: center;
+    overflow: hidden;
+}
+
+.consultation-section .sub-title {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--font-color-second);
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.consultation-section .sub-title::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 100px;
+    z-index: -1;
+    transform: translateY(-50%);
+    background-color: var(--bg-color-second);
+    display: block;
+}
+
+.consultation-section .sub-title::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    right: 100px;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--bg-color-second);
+    display: block;
 }
 
 
+.consultation-section .container-info {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 30px 20px;
+}
+
+/* .consultation-section .container-info .col {
+    width: 50%;
+    
+} */
+
+.consultation-section .container-info .col-2 {
+    padding: 0 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    justify-items: stretch;
+}
+
+.consultation-section .container-info .col-2 .row{
+    height: 100%;
+}
+
+.consultation-section .container-info .tablet {
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.consultation-section .container-info 
+.tablet .card-link{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.consultation-section .container-info 
+.tablet .card-link .container {
+    justify-content: center;
+}
+
+.consultation-section .container-info 
+.tablet .card-link p {
+    color: white !important;
+}
+
+.consultation-section .container-info 
+.tablet .card-link .text-middle {
+    padding: 35px 0;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.consultation-section .container-info 
+.tablet .card-link .text-middle .text-main {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.consultation-section .container-info 
+.tablet .card-link .img-bg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   z-index: -2;
+   object-fit: cover;
+}
+
+.consultation-section .container-info 
+.tablet .card-link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #73bb99a9;
+    z-index: -1;
+}
+
+.consultation-section .container-info
+ .col-2 .card-link {
+     position: relative;
+ }
+
+.consultation-section .container-info
+ .col-2 .card-link:first-child:after {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     content: "";
+     height: 1px;
+     width: 90%;
+     bottom: 0;
+     display: block;
+     background-color: #e4e4e4;
+ }
+
+.consultation-section .container-info
+ .col-2 .card-link .container{
+    padding: 20px 0;
+ }
+
+ .footer {
+     background-color: var(--bg-color-second);
+ }
+
+ @media  screen and (min-width: 768px) {
+
+    .consultation-section .container-article article {
+        width: 170px;
+        border-radius: 20px;
+        padding: 15px 10px;
+        padding-top: 37px;
+    }
+
+    .consultation-section .container-article 
+    article  .symtoms {
+        width: 120px;
+        top: -32px;
+    }
+
+    .consultation-section .container-article 
+    article  .symtoms span {
+        line-height: 25px;
+        padding: 0 15px;
+    }
+
+    .consultation-section .container-article 
+    article  .symtoms .number::before {
+        position: absolute;
+        left: 18px;
+        bottom: 21px;
+        content: "";
+        display: block;
+        width: 54px;
+        height: 1px;
+        transform: rotate(-45deg);
+        background-color: var(--font-color-main);
+
+    }
+    .consultation-section .container-article 
+    article  .symtoms  .tag{
+        font-size: 8px;
+    }
+
+    .consultation-section .container-article 
+    article  .symtoms .number {
+       font-size: 32px;
+    }
+
+    .consultation-section 
+    .container-article article .article-img {
+          height: 75px;
+          margin-bottom: 10px;
+    }
+
+    .consultation-section 
+    .container-article article p {
+        font-size: 10px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+
+ }
 
 
 
