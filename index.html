@@ -155,17 +155,17 @@
                            <td><span class="dash"></span></td>
                            <td><span></span></td>
                            <td><span></span></td>
-                           <td><span></span></td>
+                           <td><span class="dash"></span></td>
                        </tr>
                        <tr>
                         <td>15:00-18:30</td>
                         <td><span></span></td>
                         <td><span></span></td>
                         <td><span></span></td>
+                        <td><span class="dash"></span></td>
                         <td><span></span></td>
-                        <td><span></span></td>
-                        <td><span></span></td>
-                        <td><span></span></td>
+                        <td><span class="dash"></span></td>
+                        <td><span class="dash"></span></td>
                     </tr>
                    </table>
                    <p class="tablet-bottom-caption">（受付終了30分前）</p>
@@ -436,7 +436,7 @@
 
             <div class="container-info container-grid">
 
-                <div class="col">
+                <div class="col col-1">
                     <div class="tablet">
                         <div class="card-link row">
                             <a href="#">
@@ -489,90 +489,101 @@
     </section><!--/consultation-section-->
 
     <footer class="footer">
-         <div class="container-content">
-             <div class="col">
+         <div class="container-content container-flex">
+             <div class="col col-1">
 
-                 <div class="row">
+                 <div class="row row-1 container-flex">
                      <div>
-                         <img src="" alt="" />
+                         <img class="logo-footer" src="images/logo-footer.png" alt="Logo" />
                      </div>
-                     <div>
-                         <p>〒485-0003</p>
-                         <p>愛知県小牧市小松寺５丁目２</p>
-                         <p><i>tel</i>052-123-4567</p>
-                         <p>平日 9:00～18:30 / 土曜 9:00～12:00</p>
+                     <div class="container-phone">
+                         <p class="hide">〒485-0003</p>
+                         <p class="hide">愛知県小牧市小松寺５丁目２</p>
+                         <a href="tel:052-123-4567" class="link  container-flex link-phone">
+                            <span class="number"><i class="tag">tel.</i>052-123-4567</span>
+                            <span class="schedule">電話受付：平日 9:00～18:30 土曜 9:00～12:00</span>
+                        </a>
                     </div>
                  </div>
 
                  <table>
-                    <tr>
-                        <th>診療時間</th>
-                        <th>月</th>
-                        <th>火</th>
-                        <th>水</th>
-                        <th>木</th>
-                        <th>金</th>
-                        <th>土</th>
-                        <th>日</th>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>診療時間</th>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                            <th>日</th>
+                        </tr>
+                    </thead>
                     <tr>
                         <td>9:00-12:30</td>
-                        <td>O</td>
-                        <td>O</td>
-                        <td>O</td>
-                        <td>-</td>
-                        <td>O</td>
-                        <td>O</td>
-                        <td>-</td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span class="dash"></span></td>
+                        <td><span></span></td>
+                        <td><span></span></td>
+                        <td><span class="dash"></span></td>
                     </tr>
                     <tr>
                      <td>15:00-18:30</td>
-                     <td>O</td>
-                     <td>O</td>
-                     <td>O</td>
-                     <td>-</td>
-                     <td>O</td>
-                     <td>-</td>
-                     <td>-</td>
+                     <td><span></span></td>
+                     <td><span></span></td>
+                     <td><span></span></td>
+                     <td><span class="dash"></span></td>
+                     <td><span></span></td>
+                     <td><span class="dash"></span></td>
+                     <td><span class="dash"></span></td>
                  </tr>
                 </table>
 
-                <p>※左記診療時間内であっても予約がお受けできない場合がございます。
-                 <br/>診察時間につきましてはお電話にてご確認ください。</p>
+                <p class="text-advice">※左記診療時間内であっても予約がお受けできない場合がございます。
+                 診察時間につきましてはお電話にてご確認ください。</p>
 
-                 <nav class="row">
-                     <div class="col">
-                         <a href="#"><span>ホーム</span></a>
-                         <a href="#"><span>クリニックの特徴</span></a>
-                         <a href="#"><span>クリニック紹介</span></a>
-                         <a href="#"><span>診察内容</span></a>
-                     </div>
-                     <div class="col">
-                        <a href="#"><span>はじめての方へ</span></a>
-                        <a href="#"><span>よくある質問</span></a>
-                        <a href="#"><span>採用情報</span></a>
-                        <a href="#"><span>お知らせ</span></a>
-                    </div>
+                 <div class="container-map">
+                    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2262.6790479612573!2d136.9402670561202!3d35.30983909113115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60030d27599c1fa3%3A0x7082bcda527e822!2z77y244OI44OU44Ki44O744K544Od44O844OE44Kv44Op44OW5bCP54mn!5e0!3m2!1sja!2sjp!4v1636959892360!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <a href="#" class="link-map">大きな地図に移動する<span class="container-icon"><img src="images/footer_icon_arrow.svg" alt="Icon"></span></a>
+                </div>
+
+                 <nav class="row container-flex">
+                     <ul class="col">
+                         <li><a href="#">ホーム</a></li>
+                         <li><a href="#">クリニックの特徴</a></li>
+                         <li><a href="#">クリニック紹介</a></li>
+                         <li><a href="#">診察内容</a></li>
+                     </ul>
+                     <ul class="col">
+                        <li><a href="#">はじめての方へ</a></li>
+                        <li><a href="#">よくある質問</a></li>
+                        <li><a href="#">採用情報</a></li>
+                        <li><a href="#">お知らせ</a></li>
+                    </ul>
                  </nav>
                  
              </div>
 
-             <div class="col">
+             <div class="col col-2">
 
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2262.6790479612573!2d136.9402670561202!3d35.30983909113115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60030d27599c1fa3%3A0x7082bcda527e822!2z77y244OI44OU44Ki44O744K544Od44O844OE44Kv44Op44OW5bCP54mn!5e0!3m2!1sja!2sjp!4v1636959892360!5m2!1sja!2sjp" width="600" height="450" style="border:0; display: none;" allowfullscreen="" loading="lazy"></iframe>
-                    <p>大きな地図に移動する</p>
+                <div class="container-map" style="display: none;">
+                    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2262.6790479612573!2d136.9402670561202!3d35.30983909113115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60030d27599c1fa3%3A0x7082bcda527e822!2z77y244OI44OU44Ki44O744K544Od44O844OE44Kv44Op44OW5bCP54mn!5e0!3m2!1sja!2sjp!4v1636959892360!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p class="link-map">大きな地図に移動する</p>
                 </div>
 
              </div>
              
          </div>
+
          <div class="footer-bottom">
-              <div class="container-content">
+              <div class="container-content container-flex">
                 <p> ©みさわこころのクリニック All rights reserved.</p>
-                <a href="#"><img src="images/gototop-icon-white.svg" alt="Go to Top"></a>
+                <a href="#"><img class="icon-go-top" src="images/gototop-icon-white.svg" alt="Go to Top"></a>
               </div>
          </div>
+
     </footer>
 
     <script src="js/index.js"></script>

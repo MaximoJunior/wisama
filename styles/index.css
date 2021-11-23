@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Roboto+Condensed:wght@400;700&display=swap');
+
 /* === KV ==== */
 
 .kv {
@@ -905,6 +907,7 @@
 
 .feature-section {
     background-color: var(--bg-color-second);
+    overflow: hidden;
 }
 
 .feature-section .section-container-title .title {
@@ -1136,6 +1139,8 @@ article  .symtoms  .tag{
 
 .consultation-section .container-article 
 article  .symtoms .number {
+    font-family: 'Exo 2', sans-serif;
+    
     font-size: 25px;
     text-align: right;
     position: relative;
@@ -1322,11 +1327,12 @@ article  .symtoms .number::before {
     padding: 20px 0;
  }
 
- .footer {
-     background-color: var(--bg-color-second);
- }
 
  @media  screen and (min-width: 768px) {
+
+    .consultation-section .section-container-title{
+        margin-bottom: 55px;
+    }
 
     .consultation-section .container-article article {
         width: 170px;
@@ -1383,7 +1389,356 @@ article  .symtoms .number::before {
         line-height: 20px;
     }
 
+    .consultation-section .sub-title .breakline{
+       display: none;
+    }
+
+    .consultation-section .sub-title::after {
+        left: 120px;
+    }
+
+    .consultation-section .sub-title::before {
+        right: 120px;
+    }
+
+    
+    .consultation-section .container-info {
+        padding: 60px 20px;
+        padding-bottom: 30px;
+    }
+
+    .consultation-section .container-info .col-1 {
+        position: relative;
+    }
+
+    .consultation-section .container-info .col-1::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90%;
+        background-color: #e4e4e4;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .consultation-section .container-info .tablet {
+        width: 270px;
+        height: 370px;
+        margin: auto;
+    }
+
+    .consultation-section .container-info 
+    .card-link .icon {
+        width: 44px;
+        margin-bottom: 5px;
+    }
+
+    .consultation-section .container-info 
+    .card-link .icon-link  {
+        width: 40px;
+    }
+
+    .consultation-section .container-info 
+    .card-link .container {
+        line-height: 21px;
+    }
+
+    .consultation-section .container-info 
+   .tablet .card-link .text-middle {
+       padding: 8px 0;
+       padding-bottom: 9px;
+   }
+
  }
+
+ @media  screen and (min-width: 1100px) {
+
+    .consultation-section .section-container-title{
+        margin-bottom: 55px;
+    }
+
+    .consultation-section .container-content {
+        max-width: 972px;
+        margin: auto;
+    }
+
+    .consultation-section .container-article {
+        padding: 0;
+        column-gap: 15px;
+    }
+
+    .consultation-section .container-article article {
+        width: 230px;
+        border-radius: 20px;
+        padding: 15px 20px;
+        padding-top: 45px;
+    }
+
+    .consultation-section .container-article 
+    article  .symtoms {
+        width: 180px;
+        top: -32px;
+        padding: 8px 27px;
+    }
+
+    .consultation-section .container-article 
+    article  .symtoms span {
+        line-height: 31px;
+        padding: 0px 18px;
+    }
+
+    .consultation-section .container-article 
+    article  .symtoms .number::before {
+        position: absolute;
+        left: 16px;
+        bottom: 24px;
+        content: "";
+        display: block;
+        width: 72px;
+        height: 2px;
+
+    }
+    .consultation-section .container-article 
+    article  .symtoms  .tag{
+        font-size: 10px;
+    }
+
+    .consultation-section .container-article 
+    article  .symtoms .number {
+       font-size: 40px;
+    }
+
+    .consultation-section 
+    .container-article article .article-img {
+          height: 100px;
+          margin-bottom: 10px;
+    }
+
+    .consultation-section 
+    .container-article article p {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 28px;
+    }
+
+    .consultation-section .sub-title {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .consultation-section .sub-title .breakline{
+       display: none;
+    }
+
+    .consultation-section .sub-title::after {
+        left: 170px;
+    }
+
+    .consultation-section .sub-title::before {
+        right: 170px;
+    }
+
+    
+    .consultation-section .container-info {
+        padding: 100px 0;
+        padding-bottom: 60px;
+    }
+
+    .consultation-section .container-info .col-1 {
+        position: relative;
+    }
+
+    .consultation-section .container-info .col-1::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90%;
+        background-color: #e4e4e4;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .consultation-section .container-info .tablet {
+        width: 320px;
+        height: 445px;
+    }
+
+    .consultation-section .container-info 
+    .card-link .icon {
+        width: 44px;
+        margin-bottom: 5px;
+    }
+
+    .consultation-section .container-info 
+    .card-link .icon-link  {
+        width: 40px;
+    }
+
+    .consultation-section .container-info 
+    .card-link .container {
+        line-height: 21px;
+    }
+
+ }
+
+
+
+ /* === FOOTER === */
+
+.footer {
+   background-color: var(--bg-color-second);
+   color: white;
+}
+
+.footer .container-content {
+    padding: 40px 20px;
+}
+
+.footer .container-flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .logo-footer {
+    width: 200px;
+}
+
+.footer .container-phone {
+    margin: 20px 0;
+}
+
+.footer .container-phone .hide {
+    display: none;
+}
+
+.footer .link-phone {
+    color: white;
+}
+
+.footer .link-phone  .number{
+    font-size: 22px;
+    letter-spacing: 5px;
+} 
+
+.footer .link-phone .tag {
+    font-size: 14px;
+    font-style: normal;
+}
+
+.footer .link-phone .schedule {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.footer table {
+    color: var(--bg-color-main);
+}
+
+.footer table  th{
+  background-color: white;
+  color: var(--font-color-second);
+  border: 1px solid var(--bg-color-main);
+}
+
+.footer table td {
+    border: 1px solid var(--bg-color-main);
+}
+
+.footer table td span{
+    border: 1px solid var(--bg-color-main);
+}
+
+.footer .text-advice {
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin: 10px auto;
+}
+
+.footer .container-map {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    text-align: right;
+}
+
+.footer .container-map .map-iframe{
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+
+.footer .container-map .link-map {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.footer .container-map .link-map .container-icon {
+    display: inline-block;
+    margin-left: 5px;
+    width: 10px;
+}
+
+.footer nav {
+    flex-direction: row !important;
+    padding: 20px;
+}
+
+.footer nav .col {
+   width: 50%;
+}
+
+.footer nav .col a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 2px 0;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.footer nav .col a::after{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.footer .footer-bottom {
+    border-top: 1px solid white;
+}
+
+.footer .footer-bottom .container-content {
+    padding: 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-bottom 
+.container-content p {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.footer .footer-bottom 
+.container-content .icon-go-top {
+    width: 25px;
+    display: block;
+}
+
+
+
+
 
 
 

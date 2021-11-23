@@ -120,8 +120,8 @@ table td span {
     border: 1px solid var(--bg-color-second);
 }
 
-table td span.dash {
-    height: 1px;
+table td .dash {
+    height: 1px !important;
 }
 
 .tablet-bottom-caption {
