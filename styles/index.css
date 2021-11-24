@@ -439,7 +439,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-48%, -55%);
     font-style: normal;
 }
 
@@ -551,6 +551,7 @@
 
     .info-section {
         padding: 40px 50px;
+        padding-bottom: 0;
     }
      
     .info-section .container-content {
@@ -1035,10 +1036,6 @@
 
 @media screen and (min-width: 1100px) {
 
-    .feature-section {
-        padding: 80px 0;
-    }
-
     .feature-section .section-container-title {
         margin-bottom: 50px;
     }
@@ -1095,9 +1092,6 @@
 
 /* === CONSULTATION section  === */
 
-.consultation-section{
-
-}
 
 .consultation-section .container-article {
    flex-wrap: wrap;
@@ -1108,9 +1102,9 @@
 
 .consultation-section .container-article article {
     position: relative;
-    width: 145px;
+    width: 155px;
     margin-bottom: 50px;
-    padding: 10px 5px;
+    padding: 15px 5px;
     padding-top: 25px;
     border: 2px solid var(--bg-color-second);
     border-radius: 10px;
@@ -1463,7 +1457,7 @@ article  .symtoms .number::before {
  @media  screen and (min-width: 1100px) {
 
     .consultation-section .section-container-title{
-        margin-bottom: 55px;
+        margin-bottom: 65px;
     }
 
     .consultation-section .container-content {
@@ -1549,7 +1543,7 @@ article  .symtoms .number::before {
 
     
     .consultation-section .container-info {
-        padding: 100px 0;
+        padding: 120px 0;
         padding-bottom: 60px;
     }
 
@@ -1708,6 +1702,7 @@ article  .symtoms .number::before {
     position: relative;
     display: inline-block;
     color: white;
+    line-height: 25px;
 }
 
 .footer nav .col a::after{
@@ -1739,7 +1734,7 @@ article  .symtoms .number::before {
 
 .footer .footer-bottom 
 .container-content .icon-go-top {
-    width: 25px;
+    width: 40px;
     display: block;
 }
 
@@ -1871,6 +1866,7 @@ article  .symtoms .number::before {
         width: 972px;
         padding: 50px 0;
         margin: auto;
+        padding-bottom: 80px;
         justify-content: space-between;
     }
 
