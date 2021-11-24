@@ -122,6 +122,7 @@ table td span {
 
 table td .dash {
     height: 1px !important;
+    border-radius: 0 !important;
 }
 
 .tablet-bottom-caption {
