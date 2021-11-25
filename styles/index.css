@@ -433,6 +433,10 @@
         font-size: 14px;
     }
 
+    .kv .link-phone {
+        pointer-events: none;
+    }
+
 }
 
 
@@ -637,6 +641,7 @@
     .info-section .row-1::after {
         height: 42px;
     }
+
 }
 
 
@@ -1351,6 +1356,8 @@ article  .symtoms .number::before {
    right: 0;
    z-index: -2;
    object-fit: cover;
+   height: 100%;
+   max-width: unset !important;
 }
 
 .consultation-section .container-info 
@@ -1756,6 +1763,11 @@ article  .symtoms .number::before {
     color: white;
     font-size: 12px;
     letter-spacing: 2px;
+    transition: opacity 300ms ease-in-out;
+}
+
+.footer .container-map .link-map:hover {
+    opacity: 0.7;
 }
 
 .footer .container-map .link-map .container-icon {
@@ -1781,6 +1793,11 @@ article  .symtoms .number::before {
     display: inline-block;
     color: white;
     line-height: 25px;
+    transition: opacity 300ms ease-in-out;
+}
+
+.footer nav .col a:hover {
+    opacity: 0.7;
 }
 
 .footer nav .col a::after{
@@ -1977,6 +1994,10 @@ article  .symtoms .number::before {
         display: flex;
         flex-direction: column;
         margin-top: 40px;
+    }
+
+    .footer .link-phone {
+        pointer-events: none;
     }
 
     .footer .col-1 .row-1 .container-phone .link {
