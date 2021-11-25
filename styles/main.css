@@ -39,6 +39,7 @@ img {
 a{
     text-decoration: none;
 }
+
 .link-button {
     position: relative;
     display: block;
@@ -51,6 +52,7 @@ a{
     background-color: var(--bg-color-main);
     color: var(--font-color-second);
     border-radius: 20px;
+    transition: opacity 300ms ease-in-out;
 }
 
 .link-button .icon {
@@ -60,6 +62,54 @@ a{
     width: 10px;
     right: 20px;
 }
+
+.link-button:hover {
+  opacity: 0.9;
+}
+
+/* card-link */
+
+.card-link {
+    transition: background-color 300ms ease-in-out;
+}
+
+.card-link .container{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 15px;
+    height: 100%;
+}
+
+.card-link:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+.card-link .icon {
+    width: 30px;
+}
+
+.card-link .icon-link{
+    margin-top: 12px;
+}
+
+.card-link .text-tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--font-color-main);
+}
+
+.card-link .text-main {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--font-color-dark);
+}
+
 
 ul {
     list-style-type: none;
@@ -95,9 +145,7 @@ table {
     /* outline: 1px solid #83c8a7;
     outline-offset: -1px; */
     overflow: hidden;
-
-    /* box-shadow: 0px 0px 0px 1px #fff inset; */
-  
+    box-shadow: 0px 0px 0px 1px #83c8a7 inset;
 }
 
 table th {
@@ -180,41 +228,6 @@ table td .dash {
     top: -40px;
     width: 70px;
     height: auto;
-}
-
-/* card-link */
-
-.card-link .container{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 15px;
-    height: 100%;
-}
-
-.card-link .icon {
-    width: 30px;
-}
-
-.card-link .icon-link{
-    margin-top: 12px;
-}
-
-.card-link .text-tag {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: var(--font-color-main);
-}
-
-.card-link .text-main {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    color: var(--font-color-dark);
 }
 
 
@@ -362,7 +375,7 @@ table td .dash {
     width: 100%;
     height: calc(100vh - 60px);
     top: 60px;
-    background-color: white;
+    background-color: #fffffff2;
 }
 
 header .nav-bar-close {
