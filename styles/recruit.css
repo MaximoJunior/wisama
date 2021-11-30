@@ -175,13 +175,6 @@
 
 
 
-
-
-
-
-
-
-
 /* === BEGINNER GUIDE section === */
 
 .about-our-clinic-section {
@@ -359,3 +352,83 @@
     }
     
 }
+
+
+/* === for-job-seekers === */
+
+.for-job-seekers {
+    overflow: hidden;
+}
+
+.for-job-seekers .row-1 {
+   flex-direction: column;
+
+}
+
+.for-job-seekers .row {
+    padding: 0 20px;
+}
+
+.for-job-seekers .row-1 .col-2 {
+    order: 1;
+}
+
+.for-job-seekers .row-1 .col-1 {
+    order: 2;
+}
+
+.for-job-seekers .row-1 .col-2 p {  
+   margin-bottom: 15px;
+   line-height: 30px;
+   color: var(--font-color-main);
+}
+
+.for-job-seekers .row-1 .col-1 .container-images {
+    position: relative;
+    width: 320px;
+    height: 346px;
+    margin: 15px auto;
+    margin-bottom: 30px;
+}
+
+.for-job-seekers .row-1 .col-1 .container-images .img-1 {
+    position: absolute;
+    width: 229px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+.for-job-seekers .row-1 .col-1 .container-images .img-2{
+    position: absolute;
+    width: 295px;
+    bottom: 0;
+    right: 0;
+}
+
+.for-job-seekers .row-2 {
+    position: relative;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.for-job-seekers .row-2::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 75%;
+    height: 2px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: rgb(224, 224, 224);
+}
+
+    
+.for-job-seekers .row-2 .card-link .container {
+    line-height: 20px;
+}
+
