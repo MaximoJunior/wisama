@@ -1,16 +1,4 @@
 
-
-const btnToggle = document.getElementById('btn-toggle');
-const navBar =  document.getElementById('main-nav-bar');
-const header =  document.getElementsByClassName('header')[0];
-
-btnToggle.addEventListener('click', function() {
-
-    this.classList.toggle('btn-toggle-open');
-    navBar.classList.toggle('nav-bar-close');
-
-});
-
 // slider
 function sliderTimer() {
 
@@ -40,7 +28,7 @@ function sliderTimer() {
     setInterval(() => {
 
         slider.style.backgroundImage = "url(" + slides[prev].src + ")";
-        console.log(slides[prev].src)
+        // console.log(slides[prev].src)
         slides[prev].classList.remove("kv-slider-item-show");
         slides[current].classList.add("kv-slider-item-show");
 
@@ -64,7 +52,7 @@ function setBg(el) {
     dataImage = dataImage.split('.');
     var name = dataImage[0];
     var ext = "." + dataImage[1];
-    console.log("extension:", ext);
+    // console.log("extension:", ext);
 
     //
     var windowWidth = window.innerWidth;
@@ -98,24 +86,3 @@ window.addEventListener('resize', function(){
 
 });
 
-window.addEventListener("scroll", effectsHeader);
-
-//Header Effects
-function effectsHeader() {
-    var heigthHeader = header.offsetHeight;
-  
-     var distance = header.nextElementSibling.getBoundingClientRect().top;
-
-    if ( distance < heigthHeader) {
-        
-        if (header.classList.contains("header-bottom-shadow")) {
-            return;
-        }
-  
-        header.classList.add("header-bottom-shadow");
-  
-    }else{
-        header.classList.remove("header-bottom-shadow");
-    }
-    
-  }

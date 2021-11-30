@@ -500,3 +500,157 @@
     
 }
 
+@media screen and (min-width: 768px) {
+
+    .for-job-seekers .row {
+        padding: 50px;
+    }
+
+    .for-job-seekers .row-1 {
+        flex-direction: row;
+        justify-content: center;
+     }
+
+     .for-job-seekers .row-1 .col-2 {
+        order: 2;
+        
+    }
+    
+    .for-job-seekers .row-1 .col-1 {
+        order: 1;
+        padding-right: 20px;
+    }
+
+    .for-job-seekers .row-1 {
+       
+    }
+
+    .for-job-seekers .row-2 {
+        padding-bottom: 0;
+    }
+
+    .for-job-seekers .row-2 .card-link {
+        position: relative;
+        width: 330px;
+        padding: 50px;
+    }
+
+    .for-job-seekers .row-2  .col-1 .card-link:first-child::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 2px;
+        height: 100%;
+        top: 0;
+        right: 0px;
+        background-color: rgb(224, 224, 224);
+    }
+
+    .for-job-seekers .row-2 .card-link .container {
+        line-height: 24px;
+    }
+
+    .for-job-seekers .row-2 .card-link .icon {
+        width: 50px;
+    }
+
+    .for-job-seekers .row-2 .card-link .text-tag {
+        font-size: 14px;
+    }
+
+    .for-job-seekers .row-2 .card-link .text-main {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (min-width: 1100px) {
+
+    .for-job-seekers .row {
+        padding: 50px;
+    }
+
+    .for-job-seekers .row-1 {
+        flex-direction: row;
+        justify-content: center;
+     }
+
+    .for-job-seekers .row-1 .col{
+       width: 50%;
+    }
+
+    .for-job-seekers .row-2 {
+        padding-bottom: 0;
+    }
+
+    .for-job-seekers .row-2 .card-link {
+        position: relative;
+        width: 330px;
+        padding: 50px;
+    }
+
+    .for-job-seekers .row-2  .col-1 .card-link:first-child::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 2px;
+        height: 50%;
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%);
+        background-color: rgb(224, 224, 224);
+    }
+
+    .for-job-seekers .row-1 .col-1 .container-images {
+        position: relative;
+        width: 100%;
+        height: 346px;
+        margin: 15px auto;
+        margin-bottom: 30px;
+    }
+
+    .for-job-seekers .row-1 .col-1 .container-images .img-1 {
+        position: absolute;
+        width: 229px;
+        left: -60px;
+        top: 0;
+        z-index: -1;
+    }
+
+    .for-job-seekers .row-1 .col-1 .container-images .img-2 {
+        position: absolute;
+        width: 295px;
+        bottom: 70px;
+        right: 0;
+    }
+
+    .for-job-seekers .row-2 .card-link {
+        position: relative;
+        width: 442px;
+        padding: 50px 1px;
+    }
+
+    .for-job-seekers .row-2 .card-link:hover {
+        border-radius: 5px;
+    }
+
+    .for-job-seekers .row-2 .card-link .container {
+        line-height: 24px;
+    }
+
+    .for-job-seekers .row-2 .card-link .icon {
+        width: 50px;
+    }
+
+    .for-job-seekers .row-2 .card-link .text-tag {
+        font-size: 14px;
+    }
+
+    .for-job-seekers .row-2 .card-link .text-main {
+        font-size: 16px;
+    }
+    
+}
+
+
+
