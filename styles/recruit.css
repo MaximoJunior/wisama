@@ -8,6 +8,7 @@
 .page-sub-kv-section .row {
     max-width: 1270px;
     width: 100%;
+    margin: auto;
     position: relative;
 }
 
@@ -168,12 +169,8 @@
         padding-right: 32px;
         letter-spacing: 0.5px;
     }
-    
-   
 
 }
-
-
 
 /* === BEGINNER GUIDE section === */
 
