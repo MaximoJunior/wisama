@@ -201,13 +201,15 @@ table td .dash {
 }
 
 .card p{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 1px;
     color: var(--font-color-main);
  }
-
+ .card p span.txt-green-color{
+     font-size: 12px;
+     color: #0c5d4d;}
  .card .top {
     margin-bottom: 20px;
   }
@@ -646,8 +648,13 @@ header .nav-bar-close {
      letter-spacing: 3px;
      color: var(--font-color-main);
 }
-
-
+.page-header .container-path .path a{
+    text-decoration: none;
+    color: var(--font-color-second);
+}
+.page-header .container-path .path a:hover{
+    color: var(--font-color-main);
+}
 
 @media screen and (min-width: 768px) {
 
