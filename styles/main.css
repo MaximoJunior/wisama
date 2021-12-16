@@ -209,7 +209,7 @@ table.kaisha {
 table.kaisha {
     border: none;
     margin: auto !important;
-    
+    width: 100%;
     }
     
     table.kaisha th,
@@ -236,7 +236,7 @@ table.kaisha {
     table.kaisha,
     table.kaisha tr,
     table.kaisha td,
-    table.kaisha th {width: 135% !important;}
+    table.kaisha th {width: 100% !important;}
 
     table.kaisha,
     table.kaisha tr,
