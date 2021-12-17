@@ -1,0 +1,113 @@
+
+.section-faq .container-content {
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.section-faq .container-content h3 {
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #59a983;
+    margin: 15px 0;
+}
+
+
+.section-faq .container-qa {
+    margin-bottom: 80px;
+}
+
+.section-faq .container-content .container-qa:last-child {
+    margin-bottom: 0;
+}
+
+.section-faq .container-qa .row{
+    border-bottom: 2px dotted #ebebeb;
+    padding: 30px;
+    padding-left: 25px;
+
+}
+
+.section-faq .container-content .container-qa:last-child .row:last-child {
+    border-bottom: none;
+}
+
+.section-faq .container-qa .question {
+    position: relative;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 32px;
+    color: var(--bg-color-second);
+    margin-bottom: 5px;
+}
+
+.section-faq .container-qa .question::before {
+    position: absolute;
+    content: "Q|";
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    top: 0;
+    left: -26px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 32px;
+    color: var(--bg-color-second);
+    overflow: hidden;
+}
+
+.section-faq .container-qa .answer {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: var(--font-color-main);
+}
+
+.section-faq .container-qa .answer::before {
+    position: absolute;
+    content: "A";
+    display: inline-block;
+    width: 20px;
+    height: 30px;
+    top: 0;
+    left: -24px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: var(--font-color-main);
+}
+
+.section-faq .link-go-to {
+    display: inline-block;
+    position: relative;
+    color: var(--bg-color-second);
+}
+
+.section-faq .link-go-to::after { 
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    bottom: -1px;
+    background-color: var(--bg-color-second);
+}
+
+@media screen and (min-width: 768px) {
+
+    .section-faq .container-content {
+        padding: 0 50px;
+    }
+    
+}
+
+@media screen and (min-width: 1100px) {
+
+    .section-faq .container-content {
+        padding: 0;
+    }
+    
+}

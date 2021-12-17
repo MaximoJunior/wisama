@@ -1,0 +1,172 @@
+/* === NEWS section */
+
+.news-section .container-content {
+    padding: 0 30px;
+}
+
+.news-section .container-article {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-section .container-content article {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 40px;
+    border: 2px solid var(--bg-color-second);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 12px 12px #83c8a7ea;
+    transition: box-shadow 300ms ease-in-out;
+}
+
+.news-section .container-content article:hover{
+    box-shadow: 0px 0px #83c8a7ea;;
+}
+
+.news-section .container-article article .container {
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+
+.news-section .container-content article .article-title {
+   color: var(--font-color-dark);
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 40px;
+}
+
+.news-section .container-content article p {
+    color: #575757;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+.news-section .container-content article::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 400px;
+    height: 2px;
+    transform: rotate(-45deg);
+    bottom: -80px;
+    right: -60px;
+    background-color: var(--bg-color-second);
+}
+
+.news-section .container-content article .arrow {
+    position: absolute;
+    display: block;
+    width: 12px;
+    bottom: 5px;
+    right: 10px;
+}
+
+/* NEWS section TABLET */
+
+@media screen and (min-width: 768px) {
+
+    .news-section .container-article {
+        max-width: 668px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .news-section .container-article {
+       gap: 17px;
+       row-gap: 30px;
+    }
+
+    .news-section .container-article article{
+        margin: 0;
+        max-width: 210px;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 8px 8px #83c8a7ea;
+    }
+
+    .news-section .container-article article .article-img{
+        height: 124px;
+    }
+
+    .news-section .container-article article .container {
+        padding-bottom: 30px;
+    }
+
+    .news-section .container-article
+     article .article-img img{ 
+         object-fit: cover;
+     }
+
+     .news-section .container-content article p {
+         font-size: 14px;
+         line-height: 20px;
+     }
+
+     .news-section .container-content article .article-title {
+         line-height: 40px;
+     }
+
+     .news-section .container-content article::after {
+         bottom: -100px;
+     }
+
+     .news-section .container-content article .arrow {
+         width: 8px;
+         right: 5px;
+     }
+    
+}
+
+/* NEWS section PC */
+
+@media screen and (min-width: 1100px) {
+
+    .news-section .container-article {
+        max-width: 975px;
+        width: 100%;
+        margin: auto;
+        gap: 30px;
+        row-gap: 40px;
+    }
+
+    .news-section .container-article article{
+        margin: 0;
+        max-width: 280px;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 15px 15px var(--shadow-color-second);
+    }
+
+    .news-section .container-article article .article-img{
+        height: 180px;
+    }
+
+    .news-section .container-article article .container {
+        padding: 30px;
+        padding-bottom: 30px;
+    }
+
+    .news-section .container-article
+     article .article-img img{ 
+         object-fit: cover;
+     }
+
+     .news-section .container-content article p {
+         line-height: 30px;
+     }
+
+     .news-section .container-content article .article-title {
+         line-height: 50px;
+     }
+
+     .news-section .container-content article::after {
+         bottom: -80px;
+     }
+
+     .news-section .container-content article .arrow {
+         width: 10px;
+         right: 10px;
+     }
+    
+}

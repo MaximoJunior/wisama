@@ -207,15 +207,16 @@ table.kaisha {
     box-shadow: none;
 }
 table.kaisha {
-    border: none;
     margin: auto !important;
     width: 100%;
+    box-shadow: none;
     }
     
     table.kaisha th,
     table.kaisha td {
+    border: none;
     padding: 20px;
-    border: dotted 1px #dcdcdc;
+    border: dotted 1px #dcdcdc !important;
     text-align: left;
     }
     
@@ -232,7 +233,7 @@ table.kaisha {
         letter-spacing: 0.130em;
         background-color: #fcfcfc;
         }
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
     table.kaisha,
     table.kaisha tr,
     table.kaisha td,
@@ -243,7 +244,7 @@ table.kaisha {
     table.kaisha td,
     table.kaisha th {display:block;}
 
-    }
+    } */
 
 /* card */
 .card {
