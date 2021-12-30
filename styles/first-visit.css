@@ -22,6 +22,48 @@
    color: #59a983;
 }
 
+.page-sub-kv-section .row-2 .card .title.special-title { 
+    color: var(--font-color-main);
+}
+
+.page-sub-kv-section .container-handle-information {
+     margin-top: 25px;
+     padding: 0 20px;
+}
+
+.page-sub-kv-section .container-handle-information .container-content {
+    text-align: justify;
+    line-height: 26px;
+    padding: 20px 12px;
+    border: 2px solid var(--bg-color-second);
+    border-radius: 20px;
+    color: var(--font-color-main);
+    /* letter-spacing: 1px; */
+}
+
+.page-sub-kv-section .container-handle-information 
+.container-content p { 
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.page-sub-kv-section .container-handle-information
+ .container-content  .title {
+     font-size: 16px;
+     color: var(--bg-color-second);
+     font-weight: 900;
+     text-align: center;
+     letter-spacing: 1px;
+     margin-bottom: 10px;
+ }
+
+ .page-sub-kv-section .container-handle-information
+ .container-content .special {
+     font-size: 14px;
+     font-weight: 500;
+     color: var(--font-color-dark);
+ }
+
 
 /* Page-sub kv tablet */
 @media screen and (min-width: 768px) {
@@ -37,6 +79,14 @@
 
     .page-sub-kv-section .row-2 .card p{
         margin-bottom: 10px;
+    }
+
+    .page-sub-kv-section .container-handle-information { 
+        padding: 0 40px;
+    }
+
+    .page-sub-kv-section .container-handle-information .container-content { 
+        padding: 30px 20px;
     }
 
 }
@@ -78,6 +128,27 @@
     .page-sub-kv-section .row-2 .card p.title{
         margin-bottom: 35px;
         font-size: 16px;
+    }
+
+    .page-sub-kv-section .row-2 .card p.title.special-title{
+        margin-top: 35px;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+
+    .page-sub-kv-section .container-handle-information { 
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    /* .page-sub-kv-section .container-handle-information
+    .container-content  .title { 
+        margin-bottom: 15px;
+    } */
+
+    .page-sub-kv-section .container-handle-information .container-content { 
+        text-align: center;
+        padding: 40px 150px;
     }
 
 }
@@ -191,3 +262,53 @@
 /* .section-flow .container-content {
     padding: 0 50px;
 } */
+
+.section-about .row {
+    flex-direction: column;
+}
+
+.section-about .card {
+    border: none;
+    box-shadow: none;
+    padding-bottom: 0;
+}
+
+.section-about .card p { 
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section-about .card .title {
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.section-about .card .special {
+    color: var(--font-color-dark);
+}
+
+@media screen and (min-width: 768px) {
+
+    .section-about .row {
+        flex-direction: row;
+    }
+
+    .section-about .row {
+        padding: 0 40px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .section-about .card {
+        padding: 30px 20px;
+    }
+
+    .section-about .card .title { 
+        margin-bottom: 35px;
+    }
+    
+}

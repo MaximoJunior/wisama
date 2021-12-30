@@ -290,6 +290,22 @@ table.kaisha {
     height: auto;
 }
 
+.link-go-to {
+    display: inline-block;
+    position: relative;
+    color: var(--bg-color-second);
+}
+
+.link-go-to::after { 
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    bottom: -1px;
+    background-color: var(--bg-color-second);
+}
+
 
 /* section */
 
@@ -387,6 +403,30 @@ table.kaisha {
 .header .logo-main {
     width: 100%;
     max-width: 190px;
+}
+
+/* btn-reservation */
+.header .btn-reservation {
+    padding: 5px 25px;
+    font-family: 'Noto Sans JP', serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--font-color-main);
+    border: 1px solid var(--bg-color-second);
+    border-radius: 7px;
+    background-color: white;
+    margin-top: 7px;
+    display: none;
+}
+
+.header .btn-reservation-sp {
+    padding: 15px;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 35px;
+    display: inline-block;
 }
 
 /* toggle button */
@@ -555,11 +595,20 @@ header .nav-bar-close {
         max-width: 250px;
     }
 
+    .header .btn-reservation {
+        display: block;
+    }
+
+    .header .btn-reservation-sp {
+        display: none;
+    }
+
     .header .btn-toggle {
         display: none;
     }
 
     .header .container-phone-link {
+        margin-left: 25px;
         display: unset;
     }
 

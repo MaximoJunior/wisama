@@ -35,34 +35,50 @@
         <div class="header-wrapper-content">
            <div class="container-content guide-container">
                <div class="container-flex row-1">
-                  <div class="col container-logo-main">
+                  <div class="col-1 container-logo-main">
                       <a href="/">
                           <img class="logo-main" src="images/logo-main.svg" alt="logo"/>
                       </a>
                   </div>
-                  <!--<div class="col container-phone-link">
-                      <a href="tel:052-123-4567" class="link-phone container-flex">
-                         <span><i>tel.</i>052-123-4567</span>
-                         <span class="schedule">電話受付：平日 9:00～18:30</span>
-                         <span class="schedule">土曜 9:00～12:00</span>
-                      </a>
-                  </div>-->
+                  <div class="col-2 container container-flex">
+                      <div class="col">
+                          <button class="btn-reservation">
+                            再診の方<br>
+                            ネット予約
+                          </button>
+                      </div>
+                      <div class="col-2 container-phone-link">
+                          <a href="tel:052-123-4567" class="link-phone container-flex">
+                             <span><i>tel.</i>052-123-4567</span>
+                             <span class="schedule">電話受付：平日 9:00～18:30</span>
+                             <span class="schedule">土曜 9:00～12:00</span>
+                          </a>
+                      </div>
+                  </div>
                   <button id="btn-toggle" class="btn-toggle">
                       <span class="line"></span>
                   </button>
-               </div>
-               
-               <nav id="main-nav-bar" class="nav-bar nav-bar-close">
-                  <ul class="container-link">
-                    <li>
-                        <a href="index.html" class="link container-flex">
-                            <span class="text">ホーム</span>
-                            <span class="icon">
-                                <img src="images/icon-arrow.svg" alt="Icon arrow">
-                            </span>
-                        </a>
-                     </li>
-                      <li>
+                </div>
+                
+                <nav id="main-nav-bar" class="nav-bar nav-bar-close">
+                    <ul class="container-link">
+                        <li>
+                            <a href="/" class="link container-flex">
+                                <span class="text">ホーム</span>
+                                <span class="icon">
+                                    <img src="images/icon-arrow.svg" alt="Icon arrow">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                           <a href="first-visit.html" class="link link-active container-flex">
+                               <span class="text">はじめての方へ</span>
+                               <span class="icon">
+                                   <img src="images/icon-arrow.svg" alt="Icon arrow">
+                               </span>
+                           </a>
+                        </li>
+                        <li>
                           <a href="feature.html" class="link container-flex">
                               <span class="text">クリニックの特徴</span>
                               <span class="icon">
@@ -87,14 +103,6 @@
                         </a>
                      </li>
                      <li>
-                        <a href="first-visit.html" class="link link-active container-flex">
-                            <span class="text">はじめての方へ</span>
-                            <span class="icon">
-                                <img src="images/icon-arrow.svg" alt="Icon arrow">
-                            </span>
-                        </a>
-                     </li>
-                     <li>
                         <a href="faq.html" class="link container-flex">
                             <span class="text">よくある質問</span>
                             <span class="icon">
@@ -111,13 +119,16 @@
                         </a>
                      </li>
                      
-                      <!--<li>
-                          <a href="tel:052-123-4567" class="link  container-flex link-phone">
+                      <li>
+                          <a href="#" class="link  container-flex link-phone">
                               <span><i>tel.</i>052-123-4567</span>
                               <span class="schedule">電話受付：平日 9:00～18:30 土曜 9:00～12:00</span>
                           </a>
-                      </li>-->
+                      </li>
                   </ul>
+                  <button class="btn-reservation btn-reservation-sp">
+                    再診の方ネット予約
+                  </button>
                </nav>
 
            </div>
@@ -189,10 +200,30 @@
                 <p class="title">◆ 診察時にお持ちいただくもの</p>
                 <p>・健康保険証</p>
                 <p class="special">※他の医療機関の紹介状や検査結果、おくすり手帳などございましたらお持ちください。</p>
+                <p class="title special-title">◆初診にあたりまして</p>
+                <p>患者様のご相談内容によっては、他の医療機関を受診することをお勧めする場合がございます。<br>
+                    （例）重度の症状により緊急の入院対応を要する場合<br>
+                    （例）重度の症状により内科的全身管理が必須となる場合</p>
             </div>
+        </div>
+
+        <div class="guide-container container-handle-information">
+
+            <div class="container-content">
+               <h3 class="title">個人情報の取り扱いについて</h3>
+               <p class="special">医師を含め医療従事者には守秘義務があります。</p>
+               <p>
+                当院では従業員すべてに個人情報保護の重要性の認識を徹底させております。<br>
+                ・ご本人の同意がない場合職務上知りえた治療の内容、情報はご本人の許可なしに第三者に開示することは一切ございません。<br>
+                また、セキュリティを徹底し、個人情報が外部に漏れることもございません。<br>
+                ・ご本人の承諾を得られていない状況でご本人以外（ご家族も含みます）からの治療内容のお問い合わせにもお答えいたしません。</p>
+            </div>
+
         </div>
        
       </section><!--/page-sub-kv-section-->
+
+     
 
 
       <section class="section-flow section-padding">
@@ -223,7 +254,7 @@
                     <article class="container-flex">
                         <div class="col col-1">
                             <h3>2.問診表の記入</h3>
-                            <p>初診の方には問診票のご記入をお願いしております。受付で問診表をお渡ししますので待合の間にご記入ください。</p>
+                            <p>初診の方には問診票のご記入をお願いしております。受付で問診表をお渡ししますので待合の間にご記入ください。<br><a class="link-go-to" href="#">問診票ダウンロード</a></p>
                         </div>
                         <div class="col col-2">
                             <div class="container-img-article">
@@ -246,9 +277,45 @@
                         </div>
                     </article>
 
+                    <article class="container-flex">
+                        <div class="col col-1">
+                            <h3>4.処方</h3>
+                            <p>お薬を処方させていただく場合は院外処方になります。処方箋を発行しますので、<br>
+                                「Vトピアキッズスクール」の敷地内にあります「みんなの薬局 小牧」<br>
+                                もしくは最寄りの薬局にてお薬をお受け取りください。 </p>
+                        </div>
+                        <div class="col col-2">
+                            <div class="container-img-article">
+                                <img src="./images/flow_article_4.png" alt="Pictures">
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
 
             </div>
+      </section>
+
+      <section class="section-about section-padding">
+
+        <div class="row guide-container container-flex">
+            <div class="col col-1 card">
+                <p class="title">所要時間について</p>
+                <p>初診の場合は待ち時間を含め概ね１時間から1時間30分ほどお時間をいただきます。<br>
+                    混雑状況によってはさらにお待たせすることもあります。ご了承ください。</p>
+
+            </div>
+  
+            <div class="col col-2 card">
+                <p class="title">費用について</p>
+                <p>初診の方　３割負担で3,000円程度（保険適用）<br>
+                    再診の方　３割負担で1,500円程度（保険適用）<br>
+                    ＋おくすり代</p>
+
+                 <p class="special">※採血や心理検査、診断書などの文書を作成した場合は別途料金がかかります。</p>
+            </div>
+        </div>
+
       </section>
 
 
@@ -292,7 +359,7 @@
                     <div class="container">
                         <img class="icon icon-description" src="images/uty-icon-qanda.svg" alt="Icon Qanda">
                         <p class="text-tag">Q&A</p>
-                        <p class="text-main">クリニック紹介</p>
+                        <p class="text-main">よくある質問</p>
                         <img class="icon icon-link" src="images/link-icon-grey.svg" alt="Icon grey">
                     </div>
                 </a>
@@ -316,10 +383,11 @@
                     <div class="col container-phone">
                         <p class="hide">〒485-0003</p>
                         <p class="hide">愛知県小牧市小松寺５丁目２</p>
-                        <!--<a href="tel:052-123-4567" class="link  container-flex link-phone">
+                        <p class="hide">Vトピアキッズスクール1F</p>
+                        <a href="tel:052-123-4567" class="link  container-flex link-phone">
                            <span class="number"><i class="tag">tel.</i>052-123-4567</span>
                            <span class="schedule">電話受付：平日 9:00～18:30 土曜 9:00～12:00</span>
-                       </a>-->
+                       </a>
                    </div>
                 </div>
 
@@ -376,20 +444,20 @@
                    <a href="#" class="link-map">大きな地図に移動する<span class="container-icon"><img src="images/footer_icon_arrow.svg" alt="Icon"></span></a>
                </div>
 
-               <nav class="row container-flex">
-                <ul class="col">
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="feature.html">クリニックの特徴</a></li>
-                    <li><a href="about-us.html">クリニック紹介</a></li>
-                    <li><a href="consultation.html">診察内容</a></li>
-                </ul>
-                <ul class="col">
-                   <li><a href="first-visit.html">はじめての方へ</a></li>
-                   <li><a href="faq.html">よくある質問</a></li>
-                   <li><a href="recruit.html">採用情報</a></li>
-                   <li><a href="news.html">お知らせ</a></li>
-               </ul>
-            </nav>
+                <nav class="row container-flex">
+                    <ul class="col">
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="first-visit.html">はじめての方へ</a></li>
+                        <li><a href="feature.html">クリニックの特徴</a></li>
+                        <li><a href="about-us.html">クリニック紹介</a></li>
+                    </ul>
+                    <ul class="col">
+                       <li><a href="consultation.html">診察内容</a></li>
+                       <li><a href="faq.html">よくある質問</a></li>
+                       <li><a href="recruit.html">採用情報</a></li>
+                       <li><a href="news.html">お知らせ</a></li>
+                   </ul>
+                </nav>
                 
             </div>
 
