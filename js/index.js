@@ -52,28 +52,34 @@ function setBg(el) {
     dataImage = dataImage.split('.');
     var name = dataImage[0];
     var ext = "." + dataImage[1];
-    // console.log("extension:", ext);
+
+    var baseUrl = el.getAttribute('src');
+    console.log( baseUrl );
+
+    var lastSlashIndex = baseUrl.lastIndexOf('/');
+    
+
+    var baseUrl = baseUrl.substring(0, lastSlashIndex ) + "/";
+
+    var path = baseUrl + name + ext;
 
     //
     var windowWidth = window.innerWidth;
 
-    var path = "./images/" + name + ext;
-
     if(windowWidth < 1100 && windowWidth >= 768) {
-      path = "./images/" + name + "_tb" + ext;
+      path = baseUrl + name + "_tb" + ext;
       el.src = path;
       return;
     }
 
     if(windowWidth < 768) {
-        path = "./images/" + name + "_sp" + ext;
+        path = baseUrl + name + "_sp" + ext;
         el.src = path;
         return;
     }
 
     el.src = path;
 }
-
 
 window.addEventListener('resize', function(){
 
