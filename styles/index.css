@@ -543,8 +543,8 @@
 }
 
 .info-section .container-content .row-2 .col-2{
-    max-width: 95%;
-    width: 95%;
+    max-width: calc(100% - 24px);
+    width: 100%;
     text-align: right;
     font-size: 12px;
     line-height: 24px;
@@ -585,6 +585,7 @@
     }
 
     .info-section .container-content .row-2 .col-2{
+        max-width: calc(100% - 30px);
         padding: 20px;
         font-size: 14px;
         border-radius: 20px 0px 20px 0px;
@@ -630,6 +631,7 @@
     }
 
     .info-section .container-content .row-2 .col-2{
+        max-width: calc(100% - 60px);
         margin-left: 20px;
         margin-right: 20px;
         padding: 20px;
