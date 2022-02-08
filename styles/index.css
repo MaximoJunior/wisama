@@ -556,6 +556,7 @@
 }
 
 .info-section .row-2 {
+   -webkit-justify-content: space-between;
    justify-content: space-between;
 }
 
@@ -639,7 +640,7 @@
         line-height: 40px;
         border-radius: 20px 0px 20px 0px;
     }
-
+  
     .info-section .row-1::after {
         height: 42px;
     }
