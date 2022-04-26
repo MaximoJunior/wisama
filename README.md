@@ -1,3 +1,2 @@
-# [Wisama](http://test1202.000webhostapp.com/)
-Link: [Wisama](http://test1202.000webhostapp.com/).
-This site still developing.
+# [Wisama](https://misawa-kokoro.jp/)
+Link: [Wisama](https://misawa-kokoro.jp/).
